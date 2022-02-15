@@ -3,7 +3,7 @@
 # Created by: Jonathan Pasco-Arnone
 # Created on: February 2022
 # This is the turing machine that prints each
-# binary value form 1 to 10
+# binary value from 1 to 10
 
 def output(numberList):
     # Prints all the digits
@@ -68,7 +68,7 @@ def main():
             numberList = insert(numberList, index, 0)
             index = moveRight(index)
 
-        # If the list is currently on ten in binart
+        # If the list is currently on ten in binary
         if numberList == tenBinary:
             break
     

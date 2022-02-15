@@ -2,8 +2,8 @@
 
 # Created by: Jonathan Pasco-Arnone
 # Created on: February 2022
-# This is the turing machine that goes from the
-# binary value of 11 to 16
+# This is the turing machine that prints the
+# binary values of 11 to 16
 
 def output(numberList):
     # Prints all the digits
@@ -36,6 +36,7 @@ def main():
     numberList = [1,0,1,1]
     # makes the index the same as the last digit in 
     index = len(numberList) - 1
+    currentNumber = 12
     
     print("11 in binary is ", end = '')
     output(numberList)
@@ -54,6 +55,9 @@ def main():
         if numberList[index] == 0:
             numberList = erase(numberList, index)
             numberList = insert(numberList, index, 1)
+            print("\nChanged to " + str(currentNumber) + " in binary which is ", end='')
+            output(numberList)
+            currentNumber = currentNumber + 1
 
             # Moves tape left until at the furthest number
             while index < (len(numberList) - 1):
@@ -71,7 +75,7 @@ def main():
             numberList = insert(numberList, index, 1)
             break
 
-    print("\n\nChanged to 16 in binary which is ", end="")
+    print("\nChanged to 16 in binary which is ", end="")
     output(numberList)
     
     print("\n\nDone.")

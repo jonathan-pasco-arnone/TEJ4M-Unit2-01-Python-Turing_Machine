@@ -1,2 +1,2 @@
 language = "python3"
-run = "python3 turingMachineExtra.py"
+run = "python3 turingMachine.py && python3 turingMachineExtra.py"
