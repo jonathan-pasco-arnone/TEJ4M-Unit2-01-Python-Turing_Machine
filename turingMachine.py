@@ -2,7 +2,8 @@
 
 # Created by: Jonathan Pasco-Arnone
 # Created on: February 2022
-# This is the turing machine
+# This is the turing machine that goes from the
+# binary value of 11 to 16
 
 def output(numberList):
     # Prints all the digits
@@ -29,7 +30,7 @@ def moveLeft(index):
     index = index + 1
     return index
 
-# all the commands
+# All the commands
 def main():
     # This function holds the main turing machine
     numberList = [1,0,1,1]
