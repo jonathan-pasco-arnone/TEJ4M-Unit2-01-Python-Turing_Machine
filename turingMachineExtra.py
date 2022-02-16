@@ -5,6 +5,11 @@
 # This is the turing machine that prints each
 # binary value from 1 to 10
 
+import time
+
+def pause(seconds):
+    time.sleep(seconds)
+
 def output(numberList):
     # Prints all the digits
     for number in numberList:
@@ -54,9 +59,13 @@ def main():
         if numberList[index] == 0:
             numberList = erase(numberList, index)
             numberList = insert(numberList, index, 1)
-            print("\n" + str(currentNumber) + " in binary is ", end='')
+            print("\n"
+                + str(currentNumber)
+                + " in binary is ", end='')
             output(numberList)
             currentNumber = currentNumber + 1
+
+            pause(2.5)
 
             # Moves tape left until at the furthest number
             while index < (len(numberList) - 1):
