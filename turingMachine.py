@@ -53,7 +53,7 @@ def main():
         # then set the index to 0 and place a new value
         # there to make it in bounds.
         if index == -1:
-            index = 0
+            index = moveLeft(index)
             numberList = insert(numberList, index, "B")
 
         # If the location is a 0
