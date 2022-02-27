@@ -10,8 +10,8 @@ import time
 def pause(seconds):
     time.sleep(seconds)
 
+# Prints all the digits
 def output(numberList):
-    # Prints all the digits
     for number in numberList:
         print(str(number), end = '')
 
