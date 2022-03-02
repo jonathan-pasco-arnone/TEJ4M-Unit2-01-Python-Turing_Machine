@@ -7,6 +7,7 @@
 
 import time
 
+# Pauses the program
 def pause(seconds):
     time.sleep(seconds)
 
