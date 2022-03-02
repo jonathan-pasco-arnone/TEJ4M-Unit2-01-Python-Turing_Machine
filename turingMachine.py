@@ -55,7 +55,8 @@ def main():
         # there to make it in bounds.
         if index == -1:
             index = moveLeft(index)
-            numberList = insert(numberList, index, "B")
+            numberList = insert(numberList, index, 1)
+            break
 
         # If the location is a 0
         if numberList[index] == 0:
@@ -79,12 +80,6 @@ def main():
             numberList = erase(numberList, index)
             numberList = insert(numberList, index, 0)
             index = moveRight(index)
-
-        # If the location is blank
-        else:
-            numberList = erase(numberList, index)
-            numberList = insert(numberList, index, 1)
-            break
 
     print("\n16 in binary is ", end="")
     output(numberList)
